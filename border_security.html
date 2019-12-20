@@ -44,27 +44,20 @@
 							<section class="post">
 								<header class="major">
 									<!-- <span class="date">April 25, 2017</span> -->
-									<h2>Border Security Surveillance Network with Controlled Ammunitions</h2>
+									<h2>Border Security Surveillance Bot with Controlled Ammunitions</h2>
 									<p>Stopping intrusion along the geographic borders of India</p>
 								</header>
 
 								<div class="box">
 									<p>
-										Terrorist infiltration and intrusion along the International
+										Terrorist infiltration and intrusion along the international
 										borders has been an inevitable predicament in recent times.
-										The current solutions detect human intrusion only when it is
-										occurring or has been occurred (Laser Wall / Fencing /Floodlighting etc.).<br>
-										The Border Security Surveillance can
+										The current solutions [Till 2017] detect human intrusion only when it is
+										occurring or has occurred (Laser Wall / Fencing /Floodlighting etc.).<br>
+										The Border Security Surveillance Bot can
 										help the Security Forces to detect the intrusion before it occurs
-										along with an instant firing mechanism, under control.
-										A Series of Self Powered (Solar Powered) Static Bots with a set
-										of cameras can be installed that can detect any human
-										intervention with a specific range, using Computer Vision
-										. This bot also includes a firing
-										mechanism which will be triggered through the Monitoring and
-										Control Centre. These bots will be integrated within a Single
-										Network and a Live Feed will be given from each camera to the
-										control room.<br>
+										along with a controlled instant firing mechanism.
+										<br>
 										<ul>
 											<b>Developers</b>
 											<li>Ahmed Patil</li>
@@ -80,6 +73,17 @@
 
 									</p>
 								</div>
+								<a href="#" class="image fit"><img src="images/bot.jpeg" alt="" /></a>
+								<p>
+									A series of Self Powered (Solar Powered) Static Bots with a set
+									of cameras can be installed that can detect any human
+									intervention with a specific range, using Computer Vision
+									. This bot also includes a firing
+									mechanism which will be triggered through the Monitoring and
+									Control Centre. In the future scope of the project the bots will be integrated within a single
+									network and a live feed will be given from each camera to the
+									control room.
+								</p>
 
 								<h2>Problem Statement</h2>
 								<p>
@@ -87,9 +91,48 @@
 									<ul>
 										<li>Prior detection of human intervention within a specific range. </li>
 										<li>Controlled ammunition triggering mechanism for firing, through the “Command and Control Centre”.</li>
-										<li>Integration of all the bots into a single network for Live Feed through Camera along with the location of intrusion.</li>
+										<li><b>Future Scope</b> Integration of all the bots into a single network for Live Feed through Camera along with the location of intrusion.</li>
 									</ul>
 								</p>
+								<h2> How it works?</h2>
+									<a href="#" class="image fit"><img src="images/bssb_diagram.png" alt="Block Diagram" /></a>
+									<p>
+										<b>Data Acquisition</b> - High Definition Camera will capture
+										the video frames and send it to the ‘Processor and Control Unit’;
+										this solves the problem of human intervention in day-light.
+										But, as most of the time the intrusions occur in night-time
+										so a thermal camera will capture frames in night.
+									</p>
+									<p>
+										<b>Attack and Defence Mechanism (Firing)</b> - A small pellet
+										firing gun will be installed on the bot, which will fire after
+										a command will be given through the ‘Monitoring and Control
+										Room’ after analysing the strength of threat. This will use
+										a pneumatic control for the triggering. The target will be
+										according to the human detected in the image captured through
+										the cameras.
+									</p>
+									<p>
+										<b>Video Processing</b> - The frames delivered to the Processor
+										will be processed for the detection of human being in the image.
+										This will be done using Histogram of Gradients in opencv.
+									</p>
+									<a href="#" class="image fit"><img src="images/bssb_working.png" alt="Face detected in image" /></a>
+									<p>
+										<b>Monitoring and Control Room</b> - All the processed data
+										will be displayed in this room where a live feed will be
+										available through each bot, once a threat is detected in
+										any of the bot warning will be generated and the location
+										of the Bot which has detected the threat will be displayed
+										along with the live feed.
+									</p>
+									<p>
+ 										<b>Power Source</b> - The primary source of bot will be a
+										solar panel and a battery, also a parallel AC supply will
+										be present in emergency situations. The bot will be
+										designed so as to operate on least possible power
+										for extended period of operation using primary source.
+									</p>
 								<h2> Hardware Used</h2>
 								<p>
 									<ol>
